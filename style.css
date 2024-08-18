@@ -55,7 +55,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3.5fr;
+    grid-template-rows: 240px 1fr;
 }
 
 .sidebar{
@@ -165,7 +165,6 @@ input{
     height: 40px;
     width: 65%;
     flex: 1;
-    
 }
 
 .topmenu>.user-profile{
@@ -209,4 +208,131 @@ li{
 ul{
     align-self: center;
     justify-self: end;
+}
+
+.container > .projects{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    background-color: #E2E8F0;
+    padding-left: 26px;
+    padding-top: 24px;
+    padding-right: 30px;
+}
+
+.projects .card-container{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.card-container  > p{
+    font-family: muktabold;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.your-projects .card{
+    background-color: #fff;
+    border-left: 6px solid #F0B429;
+    padding: 24px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.1);
+    border-radius: 14px;
+}
+
+.card .actions img{
+    width: 28px;
+}
+
+.card .actions{
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    margin-top: 16px;
+}
+
+.your-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: min-content;
+    grid-auto-rows: min-content;
+    gap: 22px;
+}
+
+.your-projects .card>div > .heading{
+    font-family: muktabold;
+    font-size: 20px;
+}
+
+.announce>p{
+    font-family: muktabold;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.announce .articles{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 32px;
+    gap: 24px;
+}
+
+.articles .item{
+    background-color: #fff;
+}
+    
+
+.trending > p{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.trend-box .user img{
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+}
+
+.trend-box{
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.1);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    gap: 32px;
+    border-radius: 18px;
+}
+
+.trend-box .user{
+    display: flex;
+    gap: 20px;
+}
+
+.trend-box .user p{
+    font-size: 16px;
+}
+
+.trend-box .user p+p{
+    font-size: 20px;
+    color: #64748b;
+}
+
+.announce .articles .item>p{
+    font-family: muktabold;
+    font-size: 20px;
+}
+
+.announce .articles .item>p+p{
+    font-family: muktaregular;
+    font-size: 16px;
+}
+
+.announce .articles > .item + .item{
+    border-top: 2px solid #cbd5e1;
+    padding-top: 16px;
+
 }
