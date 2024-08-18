@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'muktabold';
+    src: url('fonts/mukta-bold-webfont.woff2') format('woff2'),
+         url('fonts/mukta-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muktaextrabold';
+    src: url('fonts/mukta-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/mukta-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'muktamedium';
+    src: url('fonts/mukta-medium-webfont.woff2') format('woff2'),
+         url('fonts/mukta-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muktaregular';
+    src: url('fonts/mukta-regular-webfont.woff2') format('woff2'),
+         url('fonts/mukta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'muktasemibold';
+    src: url('fonts/mukta-semibold-webfont.woff2') format('woff2'),
+         url('fonts/mukta-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: muktamedium;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3.5fr;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background: linear-gradient(-90deg, #2563eb, #3b82f6);
+    padding-left: 30px;
+    padding-top: 32px;
+    justify-content: start;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 72px;
+}
+
+.logo{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.logo img{
+    width: 58px;
+}
+
+.logo p{
+    font-family: muktaextrabold;
+    font-size: 36px;
+    color: #fff;
+    padding-top: 4px;
+}
+
+.sidebar .item > img{
+    width: 30px;
+}
+
+.sidebar .item > p{
+    font-family: muktasemibold;
+    font-size: 24px;
+    color: #fff;
+}
+
+.sidebar .item{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.topmenu{
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    background-color: #fff;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0,0.1);
+    padding-left: 60px;
+    padding-top: 32px;
+}
+
+.projects{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
+
+input{
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+}
